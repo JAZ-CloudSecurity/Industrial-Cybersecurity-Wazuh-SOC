@@ -14,3 +14,4 @@ if [ -f "$FILENAME" ]; then
 else
     echo "$(date) - ERROR: No se encontró el archivo $FILENAME para su eliminación." >> /var/ossec/logs/active-responses.log
 fi
+
