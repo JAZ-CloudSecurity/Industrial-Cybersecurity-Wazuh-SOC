@@ -19,16 +19,23 @@ Este repositorio documenta el diseño e implementación de una plataforma de det
 
 ### 1. Detección de Amenazas y Hardening
 Se configuró el monitoreo de intentos de acceso por fuerza bruta (SSH) y la monitorización de integridad de archivos (**FIM**) en directorios críticos como `/root`. Cualquier modificación no autorizada genera una alerta de alta prioridad en el dashboard.
+<img width="854" height="442" alt="image" src="https://github.com/user-attachments/assets/0c16980e-57b9-4380-96c4-7e12f7f5cff9" />
+<img width="877" height="658" alt="image" src="https://github.com/user-attachments/assets/2288ed7c-4df3-4fb3-803a-add9e736b703" />
 
 ### 2. Integración IDS Suricata
 Implementación de Suricata para el análisis de tráfico de red. Se configuraron reglas específicas para detectar rasgos de ataques de **Denegación de Servicio (DoS)**, permitiendo que Wazuh procese las alertas de red y las correlacione con eventos de host.
+<img width="877" height="658" alt="image" src="https://github.com/user-attachments/assets/abf04f42-b2ed-41ef-99dd-4b60f17cd056" />
+<img width="891" height="191" alt="image" src="https://github.com/user-attachments/assets/a9e47ec5-6514-4322-8b03-773f35848918" />
+<img width="892" height="478" alt="image" src="https://github.com/user-attachments/assets/bd0f0c58-cc58-4bea-a825-0c42ef34069d" />
+<img width="763" height="810" alt="image" src="https://github.com/user-attachments/assets/96769e3b-f5c4-4df3-910e-864dbcdccf31" />
+<img width="891" height="400" alt="image" src="https://github.com/user-attachments/assets/04a2d5d5-6679-4543-aac7-12ce9dd526c9" />
+
 
 ### 3. Respuesta Activa (Active Response)
 La característica más destacada es la capacidad de respuesta automática. Ante la detección de una amenaza confirmada (vía VirusTotal o firmas de Suricata), el sistema ejecuta el script `remove-threat.sh` para mitigar el riesgo en tiempo real sin intervención humana.
 
-```xml
-<active-response>
-  <disabled>no</disabled>
-  <command>remove-threat</command>
-  <location>local</location>
-  <rules_id>87105</rules_id> </active-response>
+<img width="984" height="94" alt="image" src="https://github.com/user-attachments/assets/5591dff6-3719-43a2-aace-f8b6bf34764c" />
+<img width="515" height="254" alt="image" src="https://github.com/user-attachments/assets/a520f6b9-c564-4038-ad53-a74337b27593" />
+<img width="715" height="446" alt="image" src="https://github.com/user-attachments/assets/d149b2e1-8a18-48ee-b7d2-d5be2cbd326d" />
+
+
