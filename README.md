@@ -40,5 +40,11 @@ La característica más destacada es la capacidad de respuesta automática. Ante
 <img width="715" height="446" alt="image" src="https://github.com/user-attachments/assets/d149b2e1-8a18-48ee-b7d2-d5be2cbd326d" />
 <img width="880" height="715" alt="image" src="https://github.com/user-attachments/assets/3ede888d-aa66-4bb7-a5b4-1b1114c6e618" />
 
+---
+### 🔗 Integración con Telemetría de Nube
+Este centro de operaciones de seguridad (SOC) está diseñado para ser agnóstico a la fuente de datos, permitiendo la ingesta de telemetría proveniente de infraestructuras críticas en la nube.
+
+*   **Fuente de Telemetría de Red**: [Auditoría de Red en AWS VPC Flow Logs](https://github.com/JAZ-CloudSecurity/Auditor-a-de-Red-en-AWS-VPC-Flow-Logs)
+    *   *Sinergia Técnica*: El pipeline de datos establecido en el proyecto de Flow Logs permite que este servidor Wazuh realice el monitoreo de eventos de red, detección de escaneo de puertos y análisis de tráfico rechazado (REJECT) mediante la lectura automatizada de buckets de Amazon S3.
 
 
